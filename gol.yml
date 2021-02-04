@@ -1,6 +1,6 @@
 - hosts: localhost
   become: yes
-    tasks: 
+  tasks: 
     - name: install tomcat
       apt: 
         name: tomcat8
