@@ -10,7 +10,7 @@ node('maven_slave'){
 }
     stage('Junit results') {
     // some block
-    junit 'web/target/surefire-reports/*.xml' 
+    junit 'api/target/surefire-reports/*.xml' 
 }
     stage('Archive the artifacts war file') {
     // some block
