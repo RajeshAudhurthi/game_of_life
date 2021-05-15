@@ -26,7 +26,7 @@ node{
     sh "curl -u admin:Rajesh@123 -T /var/lib/jenkins/workspace/openmrs-pipeline-scripted/webapp/target/*.war http://13.127.43.8:8082/artifactory/openmrs/openmrs.war"
 }
 }
-node('ansible_slave){
+node('ansible_slave'){
     stage('clone openmrs yml') {
     // some block
     git 'https://github.com/RajeshAudhurthi/game_of_life.git'
