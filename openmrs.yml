@@ -1,0 +1,9 @@
+- hosts: all
+  become: yes
+  tasks: 
+    - name: deploy war file 
+      get_url:
+        url: http://13.127.43.8:8082/artifactory/openmrs/openmrs.war
+        dest: /var/lib/tomcat8/webapps
+        username: admin
+        password: Rajesh@123
